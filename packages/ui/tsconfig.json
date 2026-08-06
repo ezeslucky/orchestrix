@@ -1,9 +1,12 @@
 {
-  "extends": "@repo/typescript-config/react-library.json",
-  "compilerOptions": {
-    "outDir": "dist",
-    "strictNullChecks": true
-  },
+  "extends": "@orchestrix/typescript-config/react-library.json",
   "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "compilerOptions": {
+    "jsx": "react",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "exactOptionalPropertyTypes": false,
+    "noImplicitReturns": false
+  },
+  "exclude": ["dist", "node_modules"]
 }
