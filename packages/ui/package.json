@@ -28,12 +28,17 @@
   },
   "keywords": [],
   "author": "ezeslucky",
-  "dependencies": {
+ "dependencies": {
     "@atlaskit/pragmatic-drag-and-drop": "catalog:",
     "@atlaskit/pragmatic-drag-and-drop-hitbox": "catalog:",
     "@blueprintjs/core": "catalog:",
     "@blueprintjs/popover2": "catalog:",
     "@headlessui/react": "catalog:",
+    "@orchestrix/constants": "workspace:*",
+    "@orchestrix/hooks": "workspace:*",
+    "@orchestrix/propel": "workspace:*",
+    "@orchestrix/types": "workspace:*",
+    "@orchestrix/utils": "workspace:*",
     "@popperjs/core": "catalog:",
     "@radix-ui/react-scroll-area": "catalog:",
     "clsx": "catalog:",
@@ -47,6 +52,8 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "catalog:",
+    "@orchestrix/tailwind-config": "workspace:*",
+    "@orchestrix/typescript-config": "workspace:*",
     "@storybook/addon-docs": "catalog:",
     "@storybook/addon-links": "catalog:",
     "@storybook/addon-onboarding": "catalog:",
@@ -64,8 +71,7 @@
     "postcss-nested": "catalog:",
     "storybook": "catalog:",
     "tsdown": "catalog:",
-    "typescript": "catalog:",
-    "@storybook/addon-a11y": "10.5.6"
+    "typescript": "catalog:"
   },
   "peerDependencies": {
     "react": "catalog:",

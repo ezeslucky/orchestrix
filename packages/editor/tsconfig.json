@@ -1,0 +1,17 @@
+{
+  "extends": "@orchestrix/typescript-config/react-library.json",
+  "compilerOptions": {
+    "exactOptionalPropertyTypes": false,
+    "noImplicitReturns": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "paths": {
+      "src/*": ["./src/*"],
+      "@/*": ["./src/core/*"],
+      "@/orchestrix-editor/*": ["./src/ce/*"],
+      "@/styles/*": ["./src/styles/*"]
+    }
+  },
+  "include": ["src/**/*", "index.d.ts"],
+  "exclude": ["dist", "build", "node_modules"]
+}
