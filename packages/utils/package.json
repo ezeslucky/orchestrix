@@ -23,7 +23,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "dependencies": {
-    
+    "@orchestrix/constants": "workspace:*",
     "@orchestrix/types": "workspace:*",
     "chroma-js": "catalog:",
     "clsx": "catalog:",
