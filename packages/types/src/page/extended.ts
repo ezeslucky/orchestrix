@@ -1,0 +1,2 @@
+
+export type TPageExtended = object;
