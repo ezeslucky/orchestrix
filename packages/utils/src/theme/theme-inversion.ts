@@ -1,4 +1,8 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 /**
  * Theme Inversion Utilities
@@ -37,7 +41,7 @@ export function invertPalette(palette: ColorPalette): ColorPalette {
 
 /**
  * Get CSS variable mapping for a theme mode
- * Maps 14-shade palette to Orchestrix's CSS variable system
+ * Maps 14-shade palette to orchestrix's CSS variable system
  *
  * For light mode:
  * - Uses lighter shades for backgrounds (50-100-200)

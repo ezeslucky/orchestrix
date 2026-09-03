@@ -1,4 +1,8 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import React from "react";
 import { Avatar as AvatarPrimitive } from "@base-ui-components/react/avatar";
@@ -102,6 +106,14 @@ export function Avatar(props: Props) {
       className={cn("grid place-items-center overflow-hidden", getBorderRadius(shape), {
         [sizeInfo.avatarSize]: !isAValidNumber(size),
       })}
+      style={
+        isAValidNumber(size)
+          ? {
+              height: `${size}px`,
+              width: `${size}px`,
+            }
+          : {}
+      }
       tabIndex={-1}
     >
       <AvatarPrimitive.Root className={cn("h-full w-full", getBorderRadius(shape), className)}>

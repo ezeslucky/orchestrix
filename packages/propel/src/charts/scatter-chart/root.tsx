@@ -1,4 +1,8 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import React, { useMemo, useState } from "react";
 import {
@@ -11,7 +15,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-//
+// imports
 import { AXIS_LABEL_CLASSNAME } from "@orchestrix/constants";
 import type { TScatterChartProps } from "@orchestrix/types";
 // local components

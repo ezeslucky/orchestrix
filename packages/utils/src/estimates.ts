@@ -1,6 +1,10 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
-// orchestrix web constants
+// web constants
 import { EEstimateSystem } from "@orchestrix/constants";
 
 export const isEstimatePointValuesRepeated = (

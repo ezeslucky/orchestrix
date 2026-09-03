@@ -1,4 +1,8 @@
-
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import { describe, it, expect } from "vitest";
 import { applyTransform } from "@hypermod/utils";
@@ -190,7 +194,7 @@ describe("remove-directives", () => {
       'use-client';
       import type { FC } from "react";
       import { useState } from "react";
-      // orchestrix imports
+      // imports
       import { EModalPosition, EModalWidth, ModalCore } from "@orchestrix/ui";
 
       export function MyComponent() {
@@ -203,7 +207,7 @@ describe("remove-directives", () => {
     expect(result).toMatchInlineSnapshot(`
       "import type { FC } from "react";
             import { useState } from "react";
-            // orchestrix imports
+            // imports
             import { EModalPosition, EModalWidth, ModalCore } from "@orchestrix/ui";
 
             export function MyComponent() {
@@ -243,7 +247,7 @@ describe("remove-directives", () => {
 
       import type { FC } from "react";
       import { useState } from "react";
-      // orchestrix imports
+      // imports
       import { EModalPosition, EModalWidth, ModalCore } from "@orchestrix/ui";
       // hooks
       import useKeypress from "@/hooks/use-keypress";
@@ -268,7 +272,7 @@ describe("remove-directives", () => {
     expect(result).toMatchInlineSnapshot(`
       "import type { FC } from "react";
             import { useState } from "react";
-            // orchestrix imports
+            // imports
             import { EModalPosition, EModalWidth, ModalCore } from "@orchestrix/ui";
             // hooks
             import useKeypress from "@/hooks/use-keypress";

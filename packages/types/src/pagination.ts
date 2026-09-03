@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 // Generic paginated response type for API responses
 export type TPaginatedResponse<T> = {

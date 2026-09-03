@@ -1,11 +1,10 @@
 /**
- * Copyright (c) 2026-present orchestrix Software, Inc. and contributors
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
-import type { LucideIcon } from "lucide-react";
-import { AlertTriangle, Info } from "lucide-react";
+import { InfoOutline, WarningTriangleOutline } from "lucide-react";
 import React from "react";
 // components
 import type { TButtonVariant } from "@orchestrix/propel/button";
@@ -37,9 +36,9 @@ type Props = {
   customIcon?: React.ReactNode;
 };
 
-const VARIANT_ICONS: Record<TModalVariant, LucideIcon> = {
-  danger: AlertTriangle,
-  primary: Info,
+const VARIANT_ICONS: Record<TModalVariant, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
+  danger: WarningTriangleOutline,
+  primary: InfoOutline,
 };
 
 const BUTTON_VARIANTS: Record<TModalVariant, TButtonVariant> = {

@@ -1,7 +1,11 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import { sortBy } from "lodash-es";
-// orchestrix imports
+// imports
 import type { TProject, TProjectDisplayFilters, TProjectFilters, TProjectOrderByOptions } from "@orchestrix/types";
 // local imports
 import { getDate } from "./datetime";

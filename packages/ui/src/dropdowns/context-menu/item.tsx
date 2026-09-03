@@ -1,12 +1,12 @@
 /**
- * Copyright (c) 2026-present orchestrix Software, Inc. and contributors
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import React, { useState, useRef, useContext } from "react";
 import { usePopper } from "react-popper";
-import { ChevronRightIcon } from "@orchestrix/propel/icons";
+import { ChevronRightOutline } from "lucide-react";
 // helpers
 import { cn } from "../../utils";
 // types
@@ -184,7 +184,7 @@ export function ContextMenuItem(props: ContextMenuItemProps) {
                 </p>
               )}
             </div>
-            {hasNestedItems && <ChevronRightIcon className="h-3 w-3 flex-shrink-0" />}
+            {hasNestedItems && <ChevronRightOutline className="h-3 w-3 flex-shrink-0" />}
           </>
         )}
       </button>

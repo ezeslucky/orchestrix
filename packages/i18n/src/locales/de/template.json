@@ -162,7 +162,7 @@
           },
           "website": {
             "label": "Website-URL",
-            "placeholder": " ",
+            "placeholder": "https:// ",
             "validation": {
               "invalid": "Ungültige URL",
               "maxLength": "URL sollte weniger als 800 Zeichen enthalten"

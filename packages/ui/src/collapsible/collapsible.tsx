@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2026-present orchestrix Software, Inc. and contributors
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,7 +10,7 @@ import React, { useState, useEffect, useCallback } from "react";
 export type TCollapsibleProps = {
   title: string | React.ReactNode;
   children: React.ReactNode;
-  buttonRef?: React.RefObject<HTMLButtonElement>;
+  buttonRef?: React.RefObject<HTMLButtonElement | null>;
   className?: string;
   buttonClassName?: string;
   isOpen?: boolean;
@@ -44,6 +44,7 @@ export function Collapsible(props: TCollapsibleProps) {
         {title}
       </Disclosure.Button>
       <Transition
+        as="div"
         show={localIsOpen}
         enter="transition-all duration-300 ease-in-out"
         enterFrom="grid-rows-[0fr] opacity-0"

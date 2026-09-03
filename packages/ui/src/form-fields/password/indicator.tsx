@@ -1,10 +1,10 @@
 /**
- * Copyright (c) 2026-present orchestrix Software, Inc. and contributors
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
-import { CircleCheck } from "lucide-react";
+import { TickCircleOutline } from "lucide-react";
 import React from "react";
 import { E_PASSWORD_STRENGTH } from "@orchestrix/constants";
 import { cn, getPasswordStrength, getPasswordCriteria } from "@orchestrix/utils";
@@ -57,7 +57,7 @@ export function PasswordStrengthIndicator({
           {criteria.map((criterion) => (
             <div key={criterion.key} className="flex items-center gap-1.5">
               <div className="flex items-center justify-center p-0.5">
-                <CircleCheck
+                <TickCircleOutline
                   className={cn("h-3 w-3 flex-shrink-0", {
                     "text-success-primary": criterion.isValid,
                     "text-primary": !criterion.isValid,

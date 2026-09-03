@@ -1,7 +1,11 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import React, { useMemo } from "react";
-//
+// imports
 import type { TBottomSectionConfig, TContentVisibility, TTopSectionConfig } from "@orchestrix/types";
 import { cn } from "../../utils/classname";
 

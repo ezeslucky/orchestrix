@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2026-present orchestrix Software, Inc. and contributors
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,7 +8,7 @@ import { Combobox } from "@headlessui/react";
 import { sortBy } from "lodash-es";
 import React, { useMemo, useRef, useState } from "react";
 import { usePopper } from "react-popper";
-// orchestrix imports
+// imports
 import { useOutsideClickDetector } from "@orchestrix/hooks";
 // local imports
 import { useDropdownKeyPressed } from "../hooks/use-dropdown-key-pressed";
@@ -118,7 +118,11 @@ export function Dropdown(props: ISingleSelectDropdown) {
       as="div"
       ref={dropdownRef}
       value={value}
-      onChange={onChange}
+      // Headless UI v2 widens a non-multiple Combobox to `T | null`. v1 never emitted
+      // null, so drop it here and keep this component's non-nullable onChange contract.
+      onChange={(selected) => {
+        if (selected !== null) onChange(selected);
+      }}
       className={cn(
         "h-full",
         typeof containerClassName === "function" ? containerClassName(isOpen) : containerClassName
@@ -137,9 +141,8 @@ export function Dropdown(props: ISingleSelectDropdown) {
         buttonContainerClassName={buttonContainerClassName}
         disabled={disabled}
       />
-
       {isOpen && (
-        <Combobox.Options className="fixed z-10" static>
+        <Combobox.Options as="ul" className="fixed z-10" static>
           <div
             className={cn(
               "my-1 w-48 rounded-sm border-[0.5px] border-strong bg-surface-1 px-2 py-2 text-11 shadow-raised-200 focus:outline-none",

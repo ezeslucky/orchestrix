@@ -1,8 +1,12 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
-//
+// imports
 import type { TBarChartShapeVariant, TBarItem, TChartData } from "@orchestrix/types";
 import { cn } from "../../utils/classname";
 

@@ -1,12 +1,12 @@
 /**
- * Copyright (c) 2026-present orchestrix Software, Inc. and contributors
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import React from "react";
 import type { ISvgIcons } from "@orchestrix/propel/icons";
-import { DropdownIcon } from "@orchestrix/propel/icons";
+import { DropdownOutline } from "lucide-react";
 import { cn } from "../utils";
 
 type Props = {
@@ -29,7 +29,7 @@ export function CollapsibleButton(props: Props) {
     actionItemElement,
     className = "",
     titleClassName = "",
-    ChevronIcon = DropdownIcon,
+    ChevronIcon = DropdownOutline,
   } = props;
   return (
     <div className={cn("flex h-12 items-center justify-between gap-3 border-b border-subtle px-2.5 py-3", className)}>

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2026-present orchestrix Software, Inc. and contributors
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,7 +10,7 @@ import * as ColorPicker from "react-color";
 import type { ColorResult } from "react-color";
 import { usePopper } from "react-popper";
 // helpers
-import { Button } from "../button";
+import { Button } from "../button/button";
 import { cn } from "../utils";
 // components
 import { Input } from "./input";

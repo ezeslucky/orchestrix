@@ -1,12 +1,12 @@
 /**
- * Copyright (c) 2026-present orchestrix Software, Inc. and contributors
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { Combobox } from "@headlessui/react";
 import React, { useEffect, useRef } from "react";
-import { SearchIcon } from "@orchestrix/propel/icons";
+import { SearchOutline } from "lucide-react";
 // helpers
 import { cn } from "../../utils";
 
@@ -48,7 +48,7 @@ export function InputSearch(props: IInputSearch) {
         inputContainerClassName
       )}
     >
-      {inputIcon ? <>{inputIcon}</> : <SearchIcon className="h-4 w-4 text-tertiary" aria-hidden="true" />}
+      {inputIcon ? <>{inputIcon}</> : <SearchOutline className="h-4 w-4 text-tertiary" aria-hidden="true" />}
       <Combobox.Input
         as="input"
         ref={inputRef}

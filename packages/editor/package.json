@@ -1,6 +1,6 @@
 {
   "name": "@orchestrix/editor",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "private": true,
   "description": "Core Editor that powers Orchestrix",
   "keywords": [
@@ -95,7 +95,7 @@
     "typescript": "catalog:"
   },
   "peerDependencies": {
-    "react": "catalog:",
-    "react-dom": "catalog:"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }

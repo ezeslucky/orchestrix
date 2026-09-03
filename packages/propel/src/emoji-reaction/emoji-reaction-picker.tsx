@@ -1,4 +1,8 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import React, { useMemo, useCallback } from "react";
 import { EmojiRoot } from "../emoji-icon-picker/emoji/emoji";

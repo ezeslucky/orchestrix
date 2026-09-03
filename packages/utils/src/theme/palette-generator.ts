@@ -1,4 +1,8 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 /**
  * Palette Generator
@@ -191,7 +195,7 @@ export function generateColorPalette(
 
 /**
  * Generate both brand and neutral palettes for a custom theme
- * Optimized for Orchestrix's 2-color theme system
+ * Optimized for orchestrix's 2-color theme system
  * Uses auto-calculated value stops for better color matching
  *
  * @param brandColor - Brand accent color (hex)

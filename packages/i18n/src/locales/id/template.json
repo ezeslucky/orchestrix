@@ -162,7 +162,7 @@
           },
           "website": {
             "label": "URL Website",
-            "placeholder": " ",
+            "placeholder": "https:// ",
             "validation": {
               "invalid": "URL tidak valid",
               "maxLength": "URL harus kurang dari 800 karakter"

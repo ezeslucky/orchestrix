@@ -1,4 +1,8 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useCallback, useMemo, useState } from "react";
@@ -12,7 +16,7 @@ import {
   Legend,
   CartesianGrid,
 } from "recharts";
-//
+// imports
 import { AXIS_LABEL_CLASSNAME } from "@orchestrix/constants";
 import type { TBarChartProps } from "@orchestrix/types";
 // local components

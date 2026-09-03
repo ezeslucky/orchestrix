@@ -1,4 +1,8 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 // Usage: npx tsx packages/i18n/scripts/generate-types.ts
 // Reads: src/locales/en/*.json
@@ -7,7 +11,11 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const COPYRIGHT_HEADER = `//`;
+const COPYRIGHT_HEADER = `/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */`;
 
 type NestedObject = { [key: string]: string | NestedObject };
 

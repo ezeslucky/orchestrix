@@ -1,4 +1,8 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import { memo, useMemo } from "react";
 import { Popover as BasePopover } from "@base-ui-components/react/popover";
@@ -10,7 +14,7 @@ export interface PopoverContentProps extends React.ComponentProps<typeof BasePop
   align?: TAlign;
   sideOffset?: BasePopover.Positioner.Props["sideOffset"];
   side?: TSide;
-  containerRef?: React.RefObject<HTMLElement>;
+  containerRef?: React.RefObject<HTMLElement | null>;
   positionerClassName?: string;
 }
 

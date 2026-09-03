@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import type { IUserLite } from "../users";
 import type {
@@ -50,8 +55,6 @@ export interface IInstanceConfig {
   is_email_password_enabled: boolean;
   github_app_name: string | undefined;
   slack_client_id: string | undefined;
-  posthog_api_key: string | undefined;
-  posthog_host: string | undefined;
   has_unsplash_configured: boolean;
   has_llm_configured: boolean;
   file_size_limit: number | undefined;

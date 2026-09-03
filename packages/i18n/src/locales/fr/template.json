@@ -162,7 +162,7 @@
           },
           "website": {
             "label": "URL du site web",
-            "placeholder": " ",
+            "placeholder": "https:// ",
             "validation": {
               "invalid": "URL invalide",
               "maxLength": "L’URL doit comporter moins de 800 caractères"

@@ -162,7 +162,7 @@
           },
           "website": {
             "label": "Web sitesi URL'si",
-            "placeholder": " ",
+            "placeholder": "https:// ",
             "validation": {
               "invalid": "Geçersiz URL",
               "maxLength": "URL 800 karakterden az olmalıdır"
