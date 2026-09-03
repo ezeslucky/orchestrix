@@ -162,7 +162,7 @@
           },
           "website": {
             "label": "URL trang web",
-            "placeholder": " ",
+            "placeholder": "https:// ",
             "validation": {
               "invalid": "URL không hợp lệ",
               "maxLength": "URL không nên vượt quá 800 ký tự"

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2026-present orchestrix Software, Inc. and contributors
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -64,10 +64,6 @@ const ComboDropDown = forwardRef(function ComboDropDown(props: Props, ref) {
   );
 });
 
-const ComboOptions = Combobox.Options;
-const ComboOption = Combobox.Option;
-const ComboInput = Combobox.Input;
-
 ComboDropDown.displayName = "ComboDropDown";
 
-export { ComboDropDown, ComboOptions, ComboOption, ComboInput };
+export { ComboDropDown };

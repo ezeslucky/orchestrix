@@ -162,7 +162,7 @@
           },
           "website": {
             "label": "WebサイトのURL",
-            "placeholder": " ",
+            "placeholder": "https:// ",
             "validation": {
               "invalid": "無効なURL",
               "maxLength": "URLは800文字未満にしてください"

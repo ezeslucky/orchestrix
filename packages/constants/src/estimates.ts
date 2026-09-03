@@ -1,6 +1,10 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
-// Orchestrix imports
+// imports
 import type { TEstimateSystems } from "@orchestrix/types";
 
 export const MAX_ESTIMATE_POINT_INPUT_LENGTH = 20;

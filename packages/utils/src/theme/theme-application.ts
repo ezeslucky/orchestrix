@@ -1,6 +1,13 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
-
+/**
+ * Theme Application Utilities
+ * Applies generated palettes to CSS variables for orchestrix's theme system
+ */
 
 import { hexToOKLCH, oklchToCSS, getRelativeLuminance, getPerceptualBrightness } from "./color-conversion";
 import type { OKLCH } from "./color-conversion";

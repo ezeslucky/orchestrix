@@ -162,7 +162,7 @@
           },
           "website": {
             "label": "Adres URL strony",
-            "placeholder": " ",
+            "placeholder": "https:// ",
             "validation": {
               "invalid": "Nieprawidłowy adres URL",
               "maxLength": "Adres URL powinien mieć mniej niż 800 znaków"

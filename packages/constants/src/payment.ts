@@ -1,4 +1,8 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import type { IPaymentProduct, TBillingFrequency, TProductBillingFrequency } from "@orchestrix/types";
 import { EProductSubscriptionEnum } from "@orchestrix/types";
@@ -149,7 +153,7 @@ export const SUBSCRIPTION_REDIRECTION_URLS: Record<EProductSubscriptionEnum, Rec
 export const SUBSCRIPTION_WEBPAGE_URLS: Record<EProductSubscriptionEnum, string> = {
   [EProductSubscriptionEnum.FREE]: TALK_TO_SALES_URL,
   [EProductSubscriptionEnum.ONE]: TALK_TO_SALES_URL,
-  [EProductSubscriptionEnum.PRO]: "https://Orchestrix.so/pro",
-  [EProductSubscriptionEnum.BUSINESS]: "https://Orchestrix.so/business",
-  [EProductSubscriptionEnum.ENTERPRISE]: "https://Orchestrix.so/business",
+  [EProductSubscriptionEnum.PRO]: "",
+  [EProductSubscriptionEnum.BUSINESS]: "",
+  [EProductSubscriptionEnum.ENTERPRISE]: "",
 };

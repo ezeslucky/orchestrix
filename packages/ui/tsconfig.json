@@ -2,7 +2,6 @@
   "extends": "@orchestrix/typescript-config/react-library.json",
   "include": ["src"],
   "compilerOptions": {
-    "jsx": "react",
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "exactOptionalPropertyTypes": false,

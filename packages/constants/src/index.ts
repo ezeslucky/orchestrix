@@ -1,4 +1,8 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 export * from "./ai";
 export * from "./analytics";
@@ -10,7 +14,6 @@ export * from "./dashboard";
 export * from "./emoji";
 export * from "./endpoints";
 export * from "./estimates";
-export * from "./event-tracker";
 export * from "./file";
 export * from "./fetch-keys";
 export * from "./filter";

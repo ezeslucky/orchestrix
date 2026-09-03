@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2026-present orchestrix Software, Inc. and contributors
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -58,7 +58,7 @@ export const ContextMenuContext = React.createContext<{
 } | null>(null);
 
 type ContextMenuProps = {
-  parentRef: React.RefObject<HTMLElement>;
+  parentRef: React.RefObject<HTMLElement | null>;
   items: TContextMenuItem[];
   portalContainer?: Element | null;
 };

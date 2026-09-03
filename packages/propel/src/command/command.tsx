@@ -1,8 +1,12 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import * as React from "react";
 import { Command as CommandPrimitive } from "cmdk";
-import { SearchIcon } from "../icons";
+import { SearchOutline } from "lucide-react";
 import { cn } from "../utils/classname";
 
 function CommandComponent({ className, ...props }: React.ComponentProps<typeof CommandPrimitive>) {
@@ -15,7 +19,7 @@ function CommandInput({ className, ...props }: React.ComponentProps<typeof Comma
       data-slot="command-input-wrapper"
       className="flex items-center gap-1.5 rounded-sm border border-subtle bg-surface-2 px-2"
     >
-      <SearchIcon className="size-3.5 flex-shrink-0 text-placeholder" strokeWidth={1.5} />
+      <SearchOutline className="size-3.5 flex-shrink-0 text-placeholder" />
       <CommandPrimitive.Input data-slot="command-input" className={cn(className)} {...props} />
     </div>
   );

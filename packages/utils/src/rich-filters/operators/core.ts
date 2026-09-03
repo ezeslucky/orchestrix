@@ -1,7 +1,11 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import { get } from "lodash-es";
-// orchestrix imports
+// imports
 import { DATE_OPERATOR_LABELS_MAP, EMPTY_OPERATOR_LABEL, OPERATOR_LABELS_MAP } from "@orchestrix/constants";
 import type {
   TAllAvailableOperatorsForDisplay,

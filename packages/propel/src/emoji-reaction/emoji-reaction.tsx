@@ -1,9 +1,13 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import * as React from "react";
 import { AnimatedCounter } from "../animated-counter";
 import { stringToEmoji } from "../emoji-icon-picker";
-import { AddReactionIcon } from "../icons";
+import { ReactionOutline } from "lucide-react";
 import { Tooltip } from "../tooltip";
 import { cn } from "../utils";
 import { IconButton } from "../icon-button";
@@ -106,7 +110,7 @@ const EmojiReactionButton = React.forwardRef(function EmojiReactionButton(
     <Tooltip tooltipContent="Add reaction">
       <IconButton
         ref={ref}
-        icon={AddReactionIcon}
+        icon={ReactionOutline}
         variant="ghost"
         size="sm"
         onClick={onAddReaction}

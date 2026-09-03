@@ -1,17 +1,19 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 /**
  * Theme System Constants
  * Defines shade stops, default configurations, and color modes
  */
 
-/**
- * Alpha mapping for 14-shade palette system
- */
+
 export const ALPHA_MAPPING = {
-  100: 0.05,
-  200: 0.1,
-  300: 0.15,
+  100: 0.04,
+  200: 0.06,
+  300: 0.08,
   400: 0.2,
   500: 0.3,
   600: 0.4,

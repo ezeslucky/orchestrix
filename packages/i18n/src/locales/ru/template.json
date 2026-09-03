@@ -162,7 +162,7 @@
           },
           "website": {
             "label": "URL веб-сайта",
-            "placeholder": " ",
+            "placeholder": "https:// ",
             "validation": {
               "invalid": "Некорректный URL",
               "maxLength": "URL должен быть менее 800 символов"

@@ -1,9 +1,13 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import * as React from "react";
 import { Accordion as BaseAccordion } from "@base-ui-components/react";
 
-import { PlusIcon } from "../icons";
+import { AddOutline } from "lucide-react";
 
 export interface AccordionRootProps {
   defaultValue?: string[];
@@ -51,7 +55,7 @@ function AccordionItem({ value, disabled, className = "", children }: AccordionI
 
 function AccordionTrigger({
   className = "",
-  icon = <PlusIcon aria-hidden="true" className="transition-all ease-out group-data-[panel-open]:rotate-45" />,
+  icon = <AddOutline aria-hidden="true" className="transition-all ease-out group-data-[panel-open]:rotate-45" />,
   iconClassName = "",
   children,
   asChild = false,

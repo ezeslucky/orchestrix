@@ -1,8 +1,12 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import React from "react";
 import type { LegendProps } from "recharts";
-//
+// imports
 import type { TChartLegend } from "@orchestrix/types";
 import { cn } from "../../utils/classname";
 
@@ -46,7 +50,7 @@ const CustomLegend = React.forwardRef(function CustomLegend(
   return (
     <div
       ref={ref}
-      className={cn("vertical-scrollbar flex scrollbar-sm items-center overflow-scroll px-4", {
+      className={cn("vertical-scrollbar scrollbar-sm flex items-center overflow-scroll px-4", {
         "max-h-full flex-col items-start py-4": layout === "vertical",
       })}
     >

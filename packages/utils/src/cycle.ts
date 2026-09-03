@@ -1,8 +1,12 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import { startOfToday, format } from "date-fns";
 import { isEmpty, orderBy, sortBy, uniqBy } from "lodash-es";
-// orchestrix imports
+// imports
 import type { ICycle, TCycleFilters, TProgressSnapshot } from "@orchestrix/types";
 // local imports
 import { findTotalDaysInRange, generateDateArray, getDate } from "./datetime";

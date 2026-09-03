@@ -1,8 +1,12 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import React, { useMemo, useState } from "react";
 import { Area, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis, Line, ComposedChart, CartesianGrid } from "recharts";
-//
+// imports
 import { AXIS_LABEL_CLASSNAME } from "@orchestrix/constants";
 import type { TAreaChartProps } from "@orchestrix/types";
 // local components

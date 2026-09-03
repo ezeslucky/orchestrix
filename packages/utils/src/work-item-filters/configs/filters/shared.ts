@@ -1,4 +1,10 @@
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
+// imports
 import type { IProject, TOperatorConfigMap, TSupportedOperators } from "@orchestrix/types";
 import { COMPARISON_OPERATOR, EQUALITY_OPERATOR } from "@orchestrix/types";
 // local imports

@@ -1,6 +1,5 @@
 @import "tailwindcss";
-@import "./variables.css";
-@import "./animations.css";
+
 @source "../**/*.{ts,tsx}";
 
 * {
@@ -103,8 +102,10 @@ body {
     }
   }
 
+  /* Container hover out-orders `::-webkit-scrollbar-thumb:hover` and `:active`
+     at equal specificity, so this shade shows while hovering *and* dragging. */
   &:hover::-webkit-scrollbar-thumb {
-    @apply bg-scrollbar-thumb-surface-hover;
+    @apply bg-scrollbar-thumb-hover;
   }
 
   &::-webkit-scrollbar-corner {
@@ -116,7 +117,7 @@ body {
   margin-top: 44px;
 }
 
-/* Scrollbar variants */
+
 @utility scrollbar-xs {
   &::-webkit-scrollbar {
     height: 10px;
@@ -127,6 +128,13 @@ body {
   }
 }
 @utility scrollbar-sm {
+  scrollbar-width: auto;
+  scrollbar-color: auto;
+
+  &:hover {
+    scrollbar-color: auto;
+  }
+
   &::-webkit-scrollbar {
     height: 12px;
     width: 12px;
@@ -137,6 +145,13 @@ body {
   }
 }
 @utility scrollbar-md {
+  scrollbar-width: auto;
+  scrollbar-color: auto;
+
+  &:hover {
+    scrollbar-color: auto;
+  }
+
   &::-webkit-scrollbar {
     height: 14px;
     width: 14px;
@@ -147,6 +162,13 @@ body {
   }
 }
 @utility scrollbar-lg {
+  scrollbar-width: auto;
+  scrollbar-color: auto;
+
+  &:hover {
+    scrollbar-color: auto;
+  }
+
   &::-webkit-scrollbar {
     height: 16px;
     width: 16px;
@@ -155,19 +177,6 @@ body {
   &::-webkit-scrollbar-thumb {
     border: 4px solid rgba(0, 0, 0, 0);
   }
-}
-
-.hide-vertical-scrollbar::-webkit-scrollbar {
-  width: 0 !important;
-}
-
-.hide-horizontal-scrollbar::-webkit-scrollbar {
-  height: 0 !important;
-}
-
-.hide-both-scrollbars::-webkit-scrollbar {
-  height: 0 !important;
-  width: 0 !important;
 }
 
 /* highlight class */

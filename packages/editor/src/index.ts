@@ -1,4 +1,8 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 // editors
 export {
@@ -16,10 +20,10 @@ export * from "@/helpers/common";
 export * from "@/helpers/yjs-utils";
 
 export { CORE_EXTENSIONS } from "@/constants/extension";
-export { ADDITIONAL_EXTENSIONS } from "@/orchestrix-editor/constants/extensions";
+export { ADDITIONAL_EXTENSIONS } from "@/constants/extensions";
 
 // types
 export * from "@/types";
 
 // additional exports
-export { TrailingNode } from "./core/extensions/trailing-node";
+export { TrailingNode } from "@/extensions/trailing-node";

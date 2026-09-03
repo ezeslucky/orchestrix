@@ -279,7 +279,7 @@
     "app_name_placeholder": "např., \"orchestrix-github-enterprise\"",
     "base_url_title": "Základní URL",
     "base_url_description": "Základní URL vaší organizace GitHub Enterprise.",
-    "base_url_placeholder": "např., \"https://orchestrix.github.com\"",
+    "base_url_placeholder": "např., \"https://ezeslucky.github.com\"",
     "base_url_error": "Základní URL je povinné pole",
     "invalid_base_url_error": "Neplatná základní URL",
     "client_id_title": "ID klienta",

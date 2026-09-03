@@ -1,6 +1,13 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
-
+/**
+ * Theme System Public API
+ * Exports all theme-related utilities for use across orchestrix apps
+ */
 
 // Palette generation
 export {

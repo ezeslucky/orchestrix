@@ -1,8 +1,12 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import { action, computed, makeObservable, observable } from "mobx";
 import { computedFn } from "mobx-utils";
-//
+// imports
 import type { TConfigOptions } from "@orchestrix/constants";
 import { DEFAULT_FILTER_CONFIG_OPTIONS } from "@orchestrix/constants";
 import type { TExternalFilter, TFilterConfig, TFilterProperty } from "@orchestrix/types";

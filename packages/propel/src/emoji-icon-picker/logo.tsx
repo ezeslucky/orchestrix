@@ -1,10 +1,14 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 // Due to some weird issue with the import order, the import of useFontFaceObserver
 // should be after the imported here rather than some below helper functions as it is in the original file
 
 import useFontFaceObserver from "use-font-face-observer";
-//
+// imports
 import type { TLogoProps } from "@orchestrix/types";
 // local imports
 import { getEmojiSize, stringToEmoji } from "./helper";

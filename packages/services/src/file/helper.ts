@@ -1,8 +1,12 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 // external imports
 import { fileTypeFromBuffer } from "file-type";
-//
+// imports
 import type { TFileMetaDataLite, TFileSignedURLResponse } from "@orchestrix/types";
 import { DANGEROUS_EXTENSIONS } from "@orchestrix/constants";
 

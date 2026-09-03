@@ -1,9 +1,13 @@
-//
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import { set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-//
+// imports
 import { EMPTY_OPERATOR_LABEL } from "@orchestrix/constants";
 import type {
   TSupportedOperators,

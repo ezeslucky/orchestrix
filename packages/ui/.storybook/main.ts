@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2025-present Orchestrix Software, Inc. and contributors
+ * SPDX-License-Identifier: AGPL-3.0-only
+ * See the LICENSE file for details.
+ */
 
 import type { StorybookConfig } from "@storybook/react-webpack5";
 
@@ -6,6 +11,10 @@ import { join, dirname } from "path";
 
 const require = createRequire(import.meta.url);
 
+/**
+ * This function is used to resolve the absolute path of a package.
+ * It is needed in projects that use Plug'n'Play (PnP) or are set up within a monorepo.
+ */
 function getAbsolutePath(value: string): any {
   return dirname(require.resolve(join(value, "package.json")));
 }
